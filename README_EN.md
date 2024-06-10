@@ -1,5 +1,5 @@
 # prometheus-runtime-exporter
-<a href="https://github.com/dream-mo/prometheus-runtime-exporter/README.md">中文</a>
+<a href="https://github.com/dream-mo/prometheus-runtime-exporter/blob/main/README.md">中文</a>
 
 Prometheus runtime exporter mainly refers to metric indicators related to Python runtime exposure Including CPU usage, memory usage, GC situation, thread situation, etc
 

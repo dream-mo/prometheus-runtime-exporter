@@ -1,5 +1,5 @@
 # prometheus-runtime-exporter
-<a href="https://github.com/dream-mo/prometheus-runtime-exporter/README_EN.md">English</a>
+<a href="https://github.com/dream-mo/prometheus-runtime-exporter/blob/main/README_EN.md">English</a>
 
 prometheus-runtime-exporter主要是为python runtime暴露相关的metric指标. 包括CPU使用情况、内存使用情况、GC情况、线程情况等等
 
