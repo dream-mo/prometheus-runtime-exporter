@@ -6,11 +6,11 @@ Prometheus runtime exporter mainly refers to metric indicators related to Python
 Supports Django and Flask framework adaptation, while also compatible with UWSGI runtime, and can collect indicator data normally
 
 # How to use it?
-## install
+## Install
 ```shell script
 pip install prometheus-runtime-exporter
 ```
-## run
+## Run
 Psutil needs to collect indicator data for each sub process and requires root permission to run
 ## Adapt to Django
 Assemble metric() to the URL. py of django, set the path/metrics to access this interface
