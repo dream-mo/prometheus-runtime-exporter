@@ -1,20 +1,19 @@
 # prometheus-runtime-exporter
-<a href="https://github.com/dream-mo/prometheus-runtime-exporter/README_EN.md">English</a>
+<a href="https://github.com/dream-mo/prometheus-runtime-exporter/README.md">中文</a>
 
-prometheus-runtime-exporter主要是为python runtime暴露相关的metric指标. 包括CPU使用情况、内存使用情况、GC情况、线程情况等等
+Prometheus runtime exporter mainly refers to metric indicators related to Python runtime exposure Including CPU usage, memory usage, GC situation, thread situation, etc
 
-支持Django、Flask框架适配, 同时兼容uwsgi运行方式,也可以正常采集指标数据
+Supports Django and Flask framework adaptation, while also compatible with UWSGI runtime, and can collect indicator data normally
 
-# 如何使用?
-## 安装
+# How to use it?
+## install
 ```shell script
 pip install prometheus-runtime-exporter
 ```
-## 运行
-psutil需要采集各个子进程的指标数据,需要root权限运行.
-## 适配django
-将metric()装配到django的url.py, 设置路径/metrics,即可访问此接口
-
+## run
+Psutil needs to collect indicator data for each sub process and requires root permission to run
+## Adapt to Django
+Assemble metric() to the URL. py of django, set the path/metrics to access this interface
 ```python
 import psutil
 from django.http import HttpResponse
@@ -37,7 +36,7 @@ def metrics():
 
 ```
 
-## 适配flask
+## Adapt to Flask
 ```python
 from flask import Flask
 from flask import Response
@@ -69,11 +68,11 @@ if __name__ == '__main__':
 ```
 
 # Grafana
-## 截图
+## screenshot
 ![Grafana截图1](docs/grafana-1.jpg)
 
 ![Grafana截图2](docs/grafana-2.jpg)
 
-## JSON导入
+## JSON import
 
-查看docs/grafana-dashbord.json导入Grafana即可
+View docs/Grafana dashbord.json and import Grafana
